@@ -29,13 +29,11 @@ public class Program
                         case ("Prompt User"):
                             AnsiConsole.MarkupLine($"[gold1]Selection Prompt:[/]\n");
 
-
                             Widget.Confirm();
                             Format.Line();
 
                             Widget.MenuSelect();
                             Format.Line();
-
 
                             break;
 
@@ -59,7 +57,6 @@ public class Program
                             Console.WriteLine("");
                             break;
                     }
-
                 }
                 break;
 
