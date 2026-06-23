@@ -3,76 +3,110 @@
 public class Program
 {
     static void Main(string[] args)
-    {
-        AnsiConsole.MarkupLine("[Gold1]Welcome to our Spectre Console Workbook[/]");
-        string userSelect2;
+    {     
 
-        string userSelect = AnsiConsole.Prompt(
-            new SelectionPrompt<string>()
-            .Title("[gray]Please select an option[/]")
-            .AddChoices("Widget Library", "Reference Library", "Info Library")
-            );
-
-        switch (userSelect)
+        while (OfficialStuff.MainLoop)
         {
-            case ("Widget Library"):
+            Console.Clear();
+            AnsiConsole.MarkupLine("[Gold1]Welcome to our Spectre Console Workbook[/]");
+            string userSelect2;
 
-                {
-                    userSelect2 = AnsiConsole.Prompt(
-                    new SelectionPrompt<string>()
-                    .Title("[gray]Please select widget type to view[/]")
-                    .AddChoices("Prompt User", "2", "3", "4", "5", "6")
-                    );
+            string userSelect = AnsiConsole.Prompt(
+                new SelectionPrompt<string>()
+                .Title("[gray]Please select an option[/]")
+                .AddChoices("Widget Library", "Reference Library", "Info Library")
+                );
 
-                    switch (userSelect2)
+
+            switch (userSelect)
+            {
+                case ("Widget Library"):
+
                     {
-                        case ("Prompt User"):
-                            AnsiConsole.MarkupLine($"[gold1]Selection Prompt:[/]\n");
+                        OfficialStuff.MainLoop = OfficialStuff.Off();
+                        OfficialStuff.SubLoop = OfficialStuff.On();
 
-                            Widget.Confirm();
-                            Format.Line();
+                        userSelect2 = AnsiConsole.Prompt(
+                        new SelectionPrompt<string>()
+                        .Title("[gray]Please select widget type to view[/]")
+                        .AddChoices("Prompt User", "Text Format", "3", "4", "5", "Back")
+                        );
 
-                            Widget.MenuSelect();
-                            Format.Line();
+                        while (OfficialStuff.SubLoop)
+                        {
 
-                            break;
+                            switch (userSelect2)
+                            {
+                                case ("Prompt User"):
+                                    AnsiConsole.MarkupLine($"[gold1]Selection Prompt:[/]\n");
 
-                        case (""):
-                            Console.WriteLine("");
-                            break;
+                                    Widget.Confirm();
+                                    Format.Line();
 
-                        case ("1"):
-                            Console.WriteLine("");
-                            break;
+                                    Widget.MenuSelect();
+                                    Format.Line();
 
-                        case ("2"):
-                            Console.WriteLine("");
-                            break;
+                                    Widget.MultiMenuSelect();
+                                    Format.Line();
 
-                        case ("3"):
-                            Console.WriteLine("");
-                            break;
+                                    AnsiConsole.MarkupLine("[red]Press x to return to the main menu[/]");
+                                    string userSelect3 = Console.ReadLine();
+                                    if (userSelect3 == "x")
+                                    {
+                                        OfficialStuff.SubLoop = OfficialStuff.Off();
+                                        OfficialStuff.MainLoop = OfficialStuff.On();
+                                    }
+                                    break;
 
-                        case ("4"):
-                            Console.WriteLine("");
-                            break;
+                                case ("Text Format"):
+                                    Console.WriteLine("");
+
+                                    Widget.TextJustification();
+                                    Format.Line();
+                                    break;
+
+
+
+                                case ("1"):
+                                    Console.WriteLine("");
+                                    break;
+
+                                case ("2"):
+                                    Console.WriteLine("");
+                                    break;
+
+                                case ("3"):
+                                    Console.WriteLine("");
+                                    break;
+
+                                case ("4"):
+                                    Console.WriteLine("");
+                                    break;
+
+                                case ("Back"):
+                                    break;
+                            }
+                        }
                     }
-                }
-                break;
+                    break;
 
-            case ("Reference Library"):
+                case ("Reference Library"):
+                    {
 
-                break;
+                    }
 
-            case ("Info Library"):
+                    break;
 
-                break;
+                case ("Info Library"):
 
-            default:
-                break;
+                    break;
+
+                default:
+                    break;
+
+            }
 
         }
-
     }
 }
 
