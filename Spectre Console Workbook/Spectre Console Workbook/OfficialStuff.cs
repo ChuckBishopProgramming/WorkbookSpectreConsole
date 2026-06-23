@@ -8,12 +8,13 @@ public class OfficialStuff
 
     public static void PromptReturn()
     {
-        AnsiConsole.MarkupLine("Press x to return to main menu");
-        string userInput = Console.ReadLine();
+        AnsiConsole.MarkupLine("[red]Press x to return to the main menu[/]");
 
-        if (userInput != "Y")
+        string userSelect3 = Console.ReadLine();
+        if (userSelect3 == "x")
         {
-          
+            OfficialStuff.SubLoop = OfficialStuff.Off();
+            OfficialStuff.MainLoop = OfficialStuff.On();
         }
     }
 

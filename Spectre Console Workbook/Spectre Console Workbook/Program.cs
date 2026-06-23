@@ -49,13 +49,8 @@ public class Program
                                     Widget.MultiMenuSelect();
                                     Format.Line();
 
-                                    AnsiConsole.MarkupLine("[red]Press x to return to the main menu[/]");
-                                    string userSelect3 = Console.ReadLine();
-                                    if (userSelect3 == "x")
-                                    {
-                                        OfficialStuff.SubLoop = OfficialStuff.Off();
-                                        OfficialStuff.MainLoop = OfficialStuff.On();
-                                    }
+
+                                    OfficialStuff.PromptReturn();                                    
                                     break;
 
                                 case ("Text Format"):
@@ -63,8 +58,9 @@ public class Program
 
                                     Widget.TextJustification();
                                     Format.Line();
-                                    break;
 
+                                    OfficialStuff.PromptReturn();
+                                    break;
 
 
                                 case ("1"):
