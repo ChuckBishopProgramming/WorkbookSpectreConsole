@@ -3,8 +3,8 @@
 public class Program
 {
     static void Main(string[] args)
-    {     
-
+    {
+        Colors.ColorPrint();
         while (OfficialStuff.MainLoop)
         {
             Console.Clear();
