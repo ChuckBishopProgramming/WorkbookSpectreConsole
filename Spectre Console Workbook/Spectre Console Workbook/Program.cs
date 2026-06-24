@@ -5,6 +5,10 @@ public class Program
     static void Main(string[] args)
     {
         Colors.ColorPrint();
+        Console.WriteLine("Press any key to continue");
+        Console.ReadLine();
+
+
         while (OfficialStuff.MainLoop)
         {
             Console.Clear();

@@ -13,7 +13,7 @@ public class Colors
     //green
     public static string[][] ColorInit()
     {
-        string[][] colors = new string[26][]; //will be less than 26 not all letters of alphabet used
+        string[][] colors = new string[19][]; //will be less than 26 not all letters of alphabet used
         colors[0] = new string[] { "Aqua", "Aquamarine1", "Aquamarine1_1", "Aquamarine3" };
         colors[1] = new string[] { "Black", "Blue", "Blue1", "Blue3", "Blue3_1", "BlueViolet"};
         colors[2] = new string[] { "CadetBlue", "CadetBlue_1", "Chartreuse1", "Chartreuse2", "Chartreuse2_1", "Chartreuse3", "Chartreuse3_1", "Chartreuse4", "CornflowerBlue", "Cornsilk1", "Cyan", "Cyan2", "Cyan3" };
@@ -24,21 +24,16 @@ public class Colors
         colors[7] = new string[] { "IndianRed", "IndianRed_1", "IndianRed1", "IndianRed1_1" };        
         colors[8] = new string[] { "Khaki1", "Khaki3" };
         colors[9] = new string[] { "LightCoral", "LightCyan1", "LightCyan3", "LightGoldenrod1", "LightGoldenrod2", "LightGoldenrod2_1", "LightGoldenRod2_2", "LightGoldenrod3", "LightGreen", "LightGreen_1", "LightPink1", "LightPink3", "LightPink4", "LightSalmon1", "LightSalmon3", "LightSalmon3_1", "LightSeaGreen", "LightSkyBlue1", "LightSkyBlue3", "LightSkyBlue3_1", "LightSlateBlue", "LightSlateGrey", "LightSteelBlue", "LightSteelBlue1", "LightSteelBlue3", "LightYellow3", "Lime" };
-        colors[10] = new string[] { "Magenta" };
-        colors[11] = new string[] { "" };
-        colors[12] = new string[] { "" };
-        colors[13] = new string[] { "" };
-        colors[14] = new string[] { "" };
-        colors[15] = new string[] { "" };
-        colors[16] = new string[] { "" };
-        colors[17] = new string[] { "" };
-        colors[18] = new string[] { "" };
-        colors[19] = new string[] { "" };
-        colors[20] = new string[] { "" };
-        colors[21] = new string[] { "" };
-        colors[22] = new string[] { "" };
-        colors[23] = new string[] { "" };
-        colors[24] = new string[] { "" };
+        colors[10] = new string[] { "Magenta", "Magenta1", "Magenta2", "Magenta2_1", "Magenta3", "Magenta3_1", "Magenta3_2", "Maroon", "MediumOrchid", "MediumOrchid1", "MediumOrchid1_1", "MediumOrchid3", "MediumPurple", "MediumPurple1", "MediumPurple2", "MediumPurple2_1", "MediumPurple3", "MediumPurple3_1", "MediumPurple4", "MediumSpringGreen", "MediumTurquoise", "MediumVioletRed", "MistyRose1", "MistyRose3" };
+        colors[11] = new string[] { "NavajoWhite1", "NavajoWhite3", "Navy", "NavyBlue" };
+        colors[12] = new string[] { "Olive", "Orange1", "Orange3", "Orange4", "Orange4_1", "OrangeRed1", "Orchid", "Orchid1", "Orchid2" };
+        colors[13] = new string[] { "PaleGreen1", "PaleGreen1_1", "PaleGreen3", "PaleGreen3_1", "PaleTurquoise1", "PaleTurquoise4", "PaleVioletRed1", "Pink1", "Pink3", "Plum1", "Plum2", "Plum3", "Plum4", "Purple", "Purple_1", "Purple_2", "Purple3", "Purple4", "Purple4_1", "Red", "Red1", "Red3", "Red3_1", "RosyBrown", "RoyalBlue1" };
+        colors[14] = new string[] { "Salmon1", "SandyBrown", "SeaGreen1", "SeaGreen1_1", "SeaGreen2", "SeaGreen3", "Silver", "SkyBlue1", "SkyBlue2", "SkyBlue3", "SlateBlue1", "SlateBlue3", "SlateBlue3_1", "SpringGreen1", "SpringGreen2", "SpringGreen2_1", "SpringGreen3", "SpringGreen3_1", "SpringGreen4", "SteelBlue", "SteelBlue1", "SteelBlue1_1", "SteelBlue3" };
+        colors[15] = new string[] { "Tan", "Teal", "Thistle1", "Thistle3", "Turquoise2", "Turquoise4" };
+        colors[16] = new string[] { "Violet" };
+        colors[17] = new string[] { "Wheat1", "Wheat4", "White" };
+        colors[18] = new string[] { "Yellow", "Yellow1", "Yellow2", "Yellow3", "Yellow3_1", "Yellow4", "Yellow4_1" };
+        
 
         return colors;
     }
