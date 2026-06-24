@@ -4,11 +4,7 @@ public class Program
 {
     static void Main(string[] args)
     {
-        Colors.ColorPrint();
-        Console.WriteLine("Press any key to continue");
-        Console.ReadLine();
-
-
+        
         while (OfficialStuff.MainLoop)
         {
             Console.Clear();
@@ -92,6 +88,33 @@ public class Program
 
                 case ("Reference Library"):
                     {
+                        OfficialStuff.MainLoop = OfficialStuff.Off();
+                        OfficialStuff.SubLoop = OfficialStuff.On();
+
+                        userSelect2 = AnsiConsole.Prompt(
+                        new SelectionPrompt<string>()
+                        .Title("[gray]Please select reference library to view[/]")
+                        .AddChoices("Colors", "Back")
+                        );
+
+                        switch (userSelect2)
+                        {
+                            case ("Colors"):
+                                Colors.ColorPrint();
+                                Console.WriteLine("Press any key to continue");
+                                Console.ReadLine();
+                                break;
+
+                            default:
+                                break;
+                        };
+
+                            
+                        
+                        while (OfficialStuff.SubLoop)
+                        {
+
+                        }
 
                     }
 
